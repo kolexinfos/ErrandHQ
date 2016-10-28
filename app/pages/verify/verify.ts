@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Toast } from 'ionic-native'
 
-import { HomePage } from '../home/home';
 
 import { UserProvider } from '../../providers/user-provider/user-provider';
 
@@ -36,7 +35,7 @@ export class VerifyPage {
           data => {
             console.log(data);
             if(data.status == 201){
-              this.navCtrl.setRoot(HomePage);
+              //this.navCtrl.setRoot(HomePage);
 
               this.userProvider.SetLocalObject("user",this.verify.email);
 
