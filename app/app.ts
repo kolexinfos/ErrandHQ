@@ -5,6 +5,8 @@ import { StatusBar, Splashscreen, Push } from 'ionic-native';
 
 import { TutorialPage } from './pages/tutorial/tutorial';
 import { VerifyPage } from './pages/verify/verify';
+import { SignupPage } from './pages/signup/signup';
+import { HomePage } from './pages/home/home';
 
 
 import { UserProvider } from './providers/user-provider/user-provider';
@@ -23,8 +25,7 @@ interface PageObj {
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = TutorialPage;
-
+  rootPage: any = HomePage;
 
   pages : PageObj[] = [
     //{ title: 'Home', component: HomePage, icon: 'contacts' },

@@ -4,6 +4,7 @@ import { Toast } from 'ionic-native';
 
 
 import { VerifyPage } from '../verify/verify';
+import { HomePage } from '../home/home';
 
 import { UserProvider } from '../../providers/user-provider/user-provider';
 
@@ -48,32 +49,33 @@ export class SignupPage {
       this.userObject.email = this.login.emailLogin;
       this.userObject.password = this.login.passwordLogin;
 
-      this.userProvider.LoginUser(this.userObject).subscribe(
-        data => {
-          console.log(data);
-          if(data.status == 200){
-            //this.navCtrl.setRoot(HomePage);
-
-            this.userProvider.SetLocalObject("user", this.login.emailLogin);
-
-            Toast.show("Login was successful.", "short", 'bottom').subscribe(
-                toast => {
-                console.log(toast);
-              }
-            );
-          }
-        },
-        err => {
-          console.log(err);
-
-          Toast.show(err.message, "short", 'bottom').subscribe(
-              toast => {
-              console.log(toast);
-            }
-          );
-        },
-        () => console.log("Went back and forth for Login")
-      )
+      this.navCtrl.setRoot(HomePage);
+      //this.userProvider.LoginUser(this.userObject).subscribe(
+      //  data => {
+      //    console.log(data);
+      //    if(data.status == 200){
+      //      //this.navCtrl.setRoot(HomePage);
+      //
+      //      this.userProvider.SetLocalObject("user", this.login.emailLogin);
+      //
+      //      Toast.show("Login was successful.", "short", 'bottom').subscribe(
+      //          toast => {
+      //          console.log(toast);
+      //        }
+      //      );
+      //    }
+      //  },
+      //  err => {
+      //    console.log(err);
+      //
+      //    Toast.show(err.message, "short", 'bottom').subscribe(
+      //        toast => {
+      //        console.log(toast);
+      //      }
+      //    );
+      //  },
+      //  () => console.log("Went back and forth for Login")
+      //)
     }
 
 

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar hideBackButton="true" favorite>
+    <!--<button menuToggle>-->
+      <!--<ion-icon name="menu"></ion-icon>-->
+    <!--</button>-->
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg icons-basic-page getstart" >
+
+
+  <ion-card>
+
+    <ion-card-content>
+      <h2 class="card-title" favorite>
+        ErrandHQ
+      </h2>
+      <p favorite>
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+      </p>
+      </ion-card-content>
+
+     <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" auto-play="true">
+    <ion-slide>
+      <img src="img/gtb.jpg" class="slide-image"/>
+    </ion-slide>
+    <ion-slide>
+      <img src="img/shoprite.jpg" class="slide-image"/>
+
+    </ion-slide>
+    <ion-slide>
+      <img src="img/gtb.jpg" class="slide-image"/>
+
+    </ion-slide>
+    <ion-slide>
+      <img src="img/shoprite.jpg" class="slide-image"/>
+    </ion-slide>
+       <ion-slide>
+         <img src="img/gtb.jpg" class="slide-image"/>
+
+       </ion-slide>
+       <ion-slide>
+         <img src="img/shoprite.jpg" class="slide-image"/>
+       </ion-slide>
+  </ion-slides>
+
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="pause()" ios="ios-play" md="md-play" favorite></ion-icon></ion-col>
+        <ion-col width-50><ion-icon (click)="gotoReport()" ios="ios-recording" md="md-recording" favorite></ion-icon></ion-col>
+        <ion-col width-50><ion-icon (click)="gotoContact()" ios="ios-mail" md="md-mail"  favorite></ion-icon></ion-col>
+        <ion-col width-50><ion-icon (click)="gotoPrograms()" ios="ios-list-box" md="md-list-box" favorite></ion-icon></ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="makeCall('tel:+2348035814545')" ios="ios-call" md="md-call" favorite></ion-icon></ion-col>
+        <ion-col width-50><ion-icon (click)="openFacebook()" ios="logo-facebook" md="logo-facebook" favorite></ion-icon></ion-col>
+        <ion-col width-50><ion-icon (click)="openTwitter()" ios="logo-twitter" md="logo-twitter" favorite></ion-icon></ion-col>
+        <ion-col width-50><ion-icon (click)="openWeb()" ios="ios-link" md="md-link"  favorite></ion-icon></ion-col>
+      </ion-row>
+
+    <!--</ion-grid>-->
+  </ion-card>
+
+</ion-content>
+
+<style>
+  .social-cards ion-col {
+    padding: 0;
+  }
+</style>

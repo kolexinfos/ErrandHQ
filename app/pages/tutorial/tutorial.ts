@@ -6,7 +6,7 @@ import { SignupPage } from '../signup/signup';
 
 import { UserProvider } from '../../providers/user-provider/user-provider';
 
-
+declare var window;
 
 interface Slide {
   title: string;
@@ -27,7 +27,7 @@ export class TutorialPage {
     this.slides = [
       {
         title: 'Welcome to <b>ErrandHQ</b>',
-        description: '<b>ErrandHQ</b> helps you get stuff done',
+        description: '<b>ErrandHQ helps you get stuff done</b>',
         image: 'img/logo.png',
       },
       {
@@ -50,6 +50,8 @@ export class TutorialPage {
     this.platform.ready().then(() => {
       console.log("ionViewWillEnter called");
     console.log(this.userProvider.GetLocalObject('user'));
+
+
 
     if(this.userProvider.GetLocalObject('user') != null){
       //this.navCtrl.setRoot(HomePage);
@@ -75,7 +77,9 @@ export class TutorialPage {
   ionViewWillLeave() {
     // enable the root left menu when leaving the tutorial page
     this.menu.enable(true);
-
   }
 
+  gotoHome() {
+    this.navCtrl.push(SignupPage);
+  }
 }
