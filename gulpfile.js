@@ -64,6 +64,43 @@ gulp.task('build', ['clean'], function(done){
   );
 });
 
+gulp.task('watch', ['clean'],  function(done){
+//existing ionic2 code
+}
+gulp.task('build', ['clean','myCss','myFonts'], function(done){
+//existing ionic2 code
+}
+
+//gulp.task('sass', function(){
+//  return buildSass({
+//    sassOptions: {
+//      includePaths: [
+//        'node_modules/ionic-angular',
+//        'node_modules/ionicons/dist/scss',
+//        'node_modules/font-awesome/scss'
+//      ]
+//    }
+//  });
+//});
+//
+//gulp.task('fonts', function(){
+//  return copyFonts({
+//    src: [
+//      'node_modules/ionic-angular/fonts/**/*.+(ttf|woff|woff2)',
+//      'node_modules/font-awesome/fonts/**/*.+(eot|ttf|woff|woff2|svg)'
+//    ]
+//  });
+//});
+
+gulp.task('myCss', function(){
+  return gulp.src('path-to-your-font-lib/style.css')
+    .pipe(gulp.dest('www/build/css'))
+});
+gulp.task('myFonts', function(){
+  return gulp.src('path-to-your-font-lib/fonts/**/*.+(eot|svg|ttf|woff)')
+    .pipe(gulp.dest('www/build/fonts'))
+});
+
 gulp.task('sass', buildSass);
 gulp.task('html', copyHTML);
 gulp.task('fonts', copyFonts);
