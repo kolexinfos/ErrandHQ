@@ -24,7 +24,7 @@ export class HomePage {
   mySlideOptions = {
     initialSlide: 1,
     loop: true,
-    autoplay: 3000,
+    autoplay: 2000,
     pager:true
   };
 

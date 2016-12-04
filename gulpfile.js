@@ -64,12 +64,7 @@ gulp.task('build', ['clean'], function(done){
   );
 });
 
-gulp.task('watch', ['clean'],  function(done){
-//existing ionic2 code
-}
-gulp.task('build', ['clean','myCss','myFonts'], function(done){
-//existing ionic2 code
-}
+
 
 //gulp.task('sass', function(){
 //  return buildSass({
