@@ -14,7 +14,7 @@
 
     <ion-card-content>
       <h1 class="card-title" favorite>
-        ErrandHQ
+        GOSEND
       </h1>
       <p favorite>
         The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
@@ -47,17 +47,155 @@
   </ion-slides>
     <ion-grid>
       <ion-row>
-        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-walk" md="md-walk" favorite></ion-icon><p favorite>Go Send</p></ion-col>
-        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-walk" md="md-walk" favorite></ion-icon><p favorite>Go Clean</p></ion-col>
-        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-mail" md="md-mail"  favorite></ion-icon><p favorite>Go Food</p></ion-col>
-        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-list-box" md="md-list-box" favorite></ion-icon><p favorite>Go PA</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-add" md="md-add" favorite></ion-icon><p favorite>Request</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-information-circle" md="md-information-circle" favorite></ion-icon><p favorite>Enquiry</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-wifi" md="md-wifi"  favorite></ion-icon><p favorite>Availability</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-more" md="md-more" favorite></ion-icon><p favorite>More...</p></ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      <h1 class="card-title" favorite>
+        GOCLEAN
+      </h1>
+      <p favorite>
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+      </p>
+    </ion-card-content>
+
+    <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" auto-play="true">
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-add" md="md-add" favorite></ion-icon><p favorite>Request</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-information-circle" md="md-information-circle" favorite></ion-icon><p favorite>Enquiry</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-wifi" md="md-wifi"  favorite></ion-icon><p favorite>Availability</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-more" md="md-more" favorite></ion-icon><p favorite>More...</p></ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      <h1 class="card-title" favorite>
+        GOFOOD
+      </h1>
+      <p favorite>
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+      </p>
+    </ion-card-content>
+
+    <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" auto-play="true">
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-add" md="md-add" favorite></ion-icon><p favorite>Request</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-information-circle" md="md-information-circle" favorite></ion-icon><p favorite>Enquiry</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-wifi" md="md-wifi"  favorite></ion-icon><p favorite>Availability</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-more" md="md-more" favorite></ion-icon><p favorite>More...</p></ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      <h1 class="card-title" favorite>
+        GOPERSONAL
+      </h1>
+      <p favorite>
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+        The best blah blah blah in Nigeria and Africa, solving the problem of blah blah blah in the blah blah , but we need funding asap.
+      </p>
+    </ion-card-content>
+
+    <ion-slides [options]="mySlideOptions" (ionWillChange)="onSlideChangeStart($event)" auto-play="true">
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="img/gtb.jpg" class="slide-image"/>
+
+      </ion-slide>
+      <ion-slide>
+        <img src="img/shoprite.jpg" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50><ion-icon (click)="GoSend()" ios="ios-add" md="md-add" favorite></ion-icon><p favorite>Request</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoClean()" ios="ios-information-circle" md="md-information-circle" favorite></ion-icon><p favorite>Enquiry</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoFood()" ios="ios-wifi" md="md-wifi"  favorite></ion-icon><p favorite>Availability</p></ion-col>
+        <ion-col width-50><ion-icon (click)="GoPA()" ios="ios-more" md="md-more" favorite></ion-icon><p favorite>More...</p></ion-col>
       </ion-row>
 
       <!--<ion-row>-->
-        <!--<ion-col width-50><ion-icon (click)="makeCall('tel:+2348035814545')" ios="ios-call" md="md-call" favorite></ion-icon></ion-col>-->
-        <!--<ion-col width-50><ion-icon (click)="openFacebook()" ios="logo-facebook" md="logo-facebook" favorite></ion-icon></ion-col>-->
-        <!--<ion-col width-50><ion-icon (click)="openTwitter()" ios="logo-twitter" md="logo-twitter" favorite></ion-icon></ion-col>-->
-        <!--<ion-col width-50><ion-icon (click)="openWeb()" ios="ios-link" md="md-link"  favorite></ion-icon></ion-col>-->
+      <!--<ion-col width-50><ion-icon (click)="makeCall('tel:+2348035814545')" ios="ios-call" md="md-call" favorite></ion-icon></ion-col>-->
+      <!--<ion-col width-50><ion-icon (click)="openFacebook()" ios="logo-facebook" md="logo-facebook" favorite></ion-icon></ion-col>-->
+      <!--<ion-col width-50><ion-icon (click)="openTwitter()" ios="logo-twitter" md="logo-twitter" favorite></ion-icon></ion-col>-->
+      <!--<ion-col width-50><ion-icon (click)="openWeb()" ios="ios-link" md="md-link"  favorite></ion-icon></ion-col>-->
       <!--</ion-row>-->
 
     </ion-grid>
